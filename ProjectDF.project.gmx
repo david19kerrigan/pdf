@@ -59,6 +59,7 @@
       <sprite>sprites\sprite77</sprite>
     </sprites>
     <sprite>sprites\sprite34</sprite>
+    <sprite>sprites\sprite0</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -103,11 +104,15 @@
       <object>objects\object10</object>
     </objects>
     <object>objects\object15</object>
+    <object>objects\ball</object>
+    <object>objects\object0</object>
+    <object>objects\topWater</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
   </timelines>
   <rooms name="rooms">
+    <room>rooms\room1</room>
     <room>rooms\room0</room>
   </rooms>
   <help>

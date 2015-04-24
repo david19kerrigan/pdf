@@ -36,6 +36,10 @@ alarm1=-1;
 alarm2=-1;
 alarm3=-1;
 
+s = false
+inWater = false;
+inAir = true;
+
 //window_set_fullscreen(true);
 
 </string>
@@ -87,10 +91,29 @@ alarm3=-1;
             <string>if(place_meeting(x,y,water) or place_meeting(x,y,object47)){
     grav = .4;
     jSpeed = 6;
+    if(place_meeting(x,y,topWater) and s == false){
+        war = instance_nearest(x,y,water)
+        instance_create(war.x+32,war.y,object0)
+        s = true;
+    }
+    if(place_meeting(x,y,object47) and !place_meeting(x,y,topWater)){
+        s = false;
+    }
+    if(place_meeting(x,y,topWater) and !place_meeting(x,y,water)){
+        s = false
+    }
+    inWater = true
+    inAir = false
+    
 }
-else{
+if(!(place_meeting(x,y,water) or place_meeting(x,y,object47))){
     grav = 1.6;
     jSpeed = 14
+    
+    s= false
+    inWater = false
+    inAir = true
+    
 }
 keyRight = keyboard_check(vk_right);
 keyLeft = keyboard_check(vk_left);
@@ -210,7 +233,7 @@ if(alarm2 == 0)
     wJumpingLeft = false;
 }
 
-if(grav==.4 and keyJump){
+if(grav==.4 and keyJump and (!place_meeting(x,y,topWater) or place_meeting(x,y,water))){
     wJumpingRight = false;
     wJumpingLeft = false;
         
