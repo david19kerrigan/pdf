@@ -398,15 +398,31 @@ if(grav == .4 and ySpeed &gt; 5){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if place_meeting(x,y,water) and played = false //Check if collided and if sound has been played.
+            <string>w = instance_nearest(x,y,water)
+//snd = audio_emitter_create()
+if distance_to_point(w.x,w.y)&lt;512 and played = false //Check if collided and if sound has been played.
 {
-audio_play_sound(snd_Sea, 1, true); //Play the sound
+//audio_play_sound_on(snd,snd_Sea,true,1) //Play the sound
+audio_play_sound(snd_Sea,1,true)
 played = true
+
 } //Make sure it does not loop
-if !place_meeting(x,y,water){
+w2 = distance_to_point(w.x,w.y)
+if(w2!=0){d= 1-distance_to_point(w.x,w.y)/512}
+if(w2==0){d=0}
+if distance_to_point(w.x,w.y)&lt;512 {
+    if(d!=0){audio_sound_gain(snd_Sea,d,0)}
+    if(d==0){audio_sound_gain(snd_Sea,1,0)}
+    
+}
+
+if distance_to_point(w.x,w.y)&gt;512{
     audio_stop_all()
     played = false
 }
+
+
+
 </string>
           </argument>
         </arguments>
