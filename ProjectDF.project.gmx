@@ -62,6 +62,9 @@
     </sprites>
     <sprite>sprites\sprite34</sprite>
     <sprite>sprites\sprite0</sprite>
+    <sprites name="blocks">
+      <sprite>sprites\spoint</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -96,6 +99,7 @@
         <object>objects\water</object>
         <object>objects\object47</object>
       </objects>
+      <object>objects\save</object>
     </objects>
     <objects name="misc">
       <object>objects\platform0</object>
