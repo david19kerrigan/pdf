@@ -105,6 +105,7 @@
       <object>objects\platform0</object>
       <object>objects\light</object>
       <object>objects\fire</object>
+      <object>objects\noPass</object>
     </objects>
     <objects name="v0">
       <object>objects\object10</object>

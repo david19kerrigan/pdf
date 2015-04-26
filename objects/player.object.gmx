@@ -317,6 +317,21 @@ if (place_meeting(x+xSpeed,y,platform0))
     }
 }
 
+
+if (place_meeting(x+xSpeed,y,noPass))
+{
+    while(!place_meeting(x+sign(xSpeed),y,noPass))
+    {
+        x += sign(xSpeed);
+    }
+    xSpeed = 0;
+}
+if(place_meeting(x+xSpeed,y,noPass)) x += xSpeed;
+
+
+
+
+
 if(wJumpingRight == false and wJumpingLeft == false) x+=xSpeed;
 
 if (place_meeting(x,y+ySpeed, platform0))
@@ -367,6 +382,8 @@ if(ySpeed == 0 and !place_meeting(x,y+1,platform0))
     if(sprite_index == wRight) sprite_index = jump0;
     if(sprite_index == wLeft) sprite_index = sprite45;
 }
+
+
 if(alarm1 &gt; -1) alarm1-=1;
 if(alarm2 &gt; -1) alarm2-=1;
 if(alarm3 &gt; -1) alarm3-=1;
@@ -446,6 +463,8 @@ if distance_to_point(w.x,w.y)&gt;512{
             <string>if(sprite_index == w0 or sprite_index == sprite43){
     image_speed = .25
 }
+
+
 </string>
           </argument>
         </arguments>
