@@ -398,23 +398,13 @@ if(grav == .4 and ySpeed &gt; 5){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>inst = instance_nearest(x, y, water);
-if point_distance (x, y, water.x, water.y) &lt; 128
-   {
-   close = true;
-   }
-else
-   {
-   close = false;
-   }
-   if close == true
-   {
-   audio_play_sound(snd_Sea, 32, true);
-   }
-   else
-   {
-   audio_stop_sound(snd_Sea)
-   }
+            <string>if instance_position(x,y,water) and played = false //Check if collided and if sound has been played.
+{
+audio_play_sound(snd_Sea, 1, false); //Play the sound
+played = true
+} //Make sure it does not loop
+else if played = true
+{played = false} //Make sure it plays again if there is another collision.
 </string>
           </argument>
         </arguments>
