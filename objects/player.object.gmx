@@ -35,7 +35,7 @@ wJumpingLeft = false;
 alarm1=-1;
 alarm2=-1;
 alarm3=-1;
-
+played = false
 s = false
 inWater = false;
 inAir = true;
@@ -398,13 +398,15 @@ if(grav == .4 and ySpeed &gt; 5){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_position(x,y,water) and played = false //Check if collided and if sound has been played.
+            <string>if place_meeting(x,y,water) and played = false //Check if collided and if sound has been played.
 {
-audio_play_sound(snd_Sea, 1, false); //Play the sound
+audio_play_sound(snd_Sea, 1, true); //Play the sound
 played = true
 } //Make sure it does not loop
-else if played = true
-{played = false} //Make sure it plays again if there is another collision.
+if !place_meeting(x,y,water){
+    audio_stop_all()
+    played = false
+}
 </string>
           </argument>
         </arguments>
