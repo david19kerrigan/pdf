@@ -65,6 +65,7 @@
     <sprites name="blocks">
       <sprite>sprites\spoint</sprite>
     </sprites>
+    <sprite>sprites\sDialog</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -72,6 +73,8 @@
     <background>background\background2</background>
     <background>background\l0</background>
     <background>background\l0_new</background>
+    <background>background\background0</background>
+    <background>background\bGrass</background>
   </backgrounds>
   <paths name="paths"/>
   <shaders name="shaders">
@@ -120,6 +123,7 @@
   </timelines>
   <rooms name="rooms">
     <room>rooms\room1</room>
+    <room>rooms\room0</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
