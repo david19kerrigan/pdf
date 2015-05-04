@@ -122,7 +122,7 @@
     <objects name="v0">
       <object>objects\object10</object>
     </objects>
-    <object>objects\object15</object>
+    <object>objects\lamp</object>
     <object>objects\ball</object>
     <object>objects\topWater</object>
     <object>objects\Controller</object>
