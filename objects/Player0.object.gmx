@@ -50,7 +50,7 @@ vspeed = (keyboard_check(vk_down) - keyboard_check(vk_up)) * 4;
             <kind>1</kind>
             <string>if point_distance(x, y, player.x, player.y) &gt; 5
    {
-   move_towards_point(player.x, player.y, 5);
+   move_towards_point(player.x, player.y, 20);
    }
 else speed = 0;
 </string>
