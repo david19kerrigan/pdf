@@ -128,6 +128,7 @@
     <object>objects\Controller</object>
     <object>objects\Guy</object>
     <object>objects\Player0</object>
+    <object>objects\object0</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
