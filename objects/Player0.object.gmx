@@ -53,6 +53,9 @@ vspeed = (keyboard_check(vk_down) - keyboard_check(vk_up)) * 4;
    move_towards_point(player.x, player.y, 20);
    }
 else speed = 0;
+
+x = player.x
+y = player.y
 </string>
           </argument>
         </arguments>
