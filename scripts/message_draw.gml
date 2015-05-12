@@ -51,14 +51,14 @@ if(speaker != "") {
         view_yview[0] + view_hview[0] - sprite_get_height(sDialog),
         false);
     draw_set_color(c_black); //Set the colour to black for the border and text
-    //Draw the border around the background
+    //Draw the border ar    ound the background
     draw_roundrect(view_xview[0],
         view_yview[0] + view_hview[0] - sprite_get_height(sDialog) - 32,
         view_xview[0] + string_width(speaker) + 16,
         view_yview[0] + view_hview[0] - sprite_get_height(sDialog),
         true);
     //Write speaker's name in the box
-    draw_text(view_xview[0] + 8, view_yview[0] + view_hview[0] - sprite_get_height(sDialog) - 24, speaker);
+    draw_text(view_xview[400] + 8, view_yview[400] + view_hview[400] - sprite_get_height(sDialog) - 24, speaker);
 }
 //Now draw the string, letter by letter. 
 //pos is the current last letter to show, incremented once each step.
@@ -113,7 +113,7 @@ repeat(pos) {
             if(char != "#") {
                 //Draw the string and add the width of the letter to charX
                 //Draw the current letter
-                draw_text(view_xview[0] + 16 + charX, view_yview[0] + view_hview[0] - sprite_get_height(sDialog) + 16 + charY, char);
+                draw_text(view_xview[400] + 16 + charX, view_yview[400] + view_hview[400] - sprite_get_height(sDialog) + 16 + charY, char);
                 charX += string_width(char);
             } else {
                 //Start the next line

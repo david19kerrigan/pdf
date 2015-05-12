@@ -132,6 +132,7 @@
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
+    <timeline>timelines\timeline1</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\room1</room>

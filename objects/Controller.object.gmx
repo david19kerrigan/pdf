@@ -84,6 +84,7 @@ if(instance_number(Guy) &lt; 5 &amp;&amp; !sprite_exists(pauseImg)) {
         while(!place_empty(x, y)) {
             x = irandom(room_width - 32);
             y = irandom(room_height - 32);
+
         }
     }
 }
@@ -117,10 +118,10 @@ message_init();
 pauseImg = noone;
 
 //Instructions message:
-message_add("Controller: Welcome to %gthe game%k!");
+message_add("Welcome to %gthe game%k!");
 //Add more messages to the queue
-message_add("Controller: Move with the arrow keys. Run into people#to talk to them.");
-message_add("Controller: I hope you have fun.");
+message_add("Move with the arrow keys. Run into people#to talk to them.");
+message_add("I hope you have fun.");
 
 randomize();
 </string>
@@ -152,14 +153,14 @@ if(is_message()) {
     If you don't want that to happen, delete this -&gt; */
     if(!sprite_exists(pauseImg)) {
         //Get an image of the screen
-        pauseImg = create_sprite_from_screen(0, 0, 640, 480, false, false, 0, 0);
+        pauseImg = create_sprite_from_screen(400, 400, 640, 480, false, false, 0, 0);
         //And stop all actions, not including this one
         instance_deactivate_all(true);
     }
     //Draw the pause sprite
-    draw_sprite(pauseImg, 0, view_xview[0], view_yview[0]);
+    draw_sprite(pauseImg, 0, view_xview[400], view_yview[400]);
     /* End point for comment */
-    message_draw();
+    message_draw(x,y);
 } else {
     //Clear the sprite from memory
     if(sprite_exists(pauseImg)) {
