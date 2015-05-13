@@ -160,8 +160,7 @@ if(is_message()) {
     //Draw the pause sprite
     draw_sprite(pauseImg, 0, view_xview[400], view_yview[400]);
     /* End point for comment */
-    g = instance_nearest(player.x,player.y,guy);
-    message_draw(g.x,g.y);
+    message_draw(x,y);
 } else {
     //Clear the sprite from memory
     if(sprite_exists(pauseImg)) {
