@@ -6,6 +6,10 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_Sea</sound>
+    <sound>sound\crashDown</sound>
+    <sound>sound\Jump</sound>
+    <sound>sound\BreakOut</sound>
+    <sound>sound\walk</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="charicter">
