@@ -81,15 +81,7 @@
     <background>background\l0_new</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts">
-    <script>scripts\create_sprite_from_screen.gml</script>
-    <script>scripts\is_message.gml</script>
-    <script>scripts\message_add.gml</script>
-    <script>scripts\message_draw.gml</script>
-    <script>scripts\message_init.gml</script>
-    <script>scripts\message_read.gml</script>
-    <script>scripts\message_remove.gml</script>
-  </scripts>
+  <scripts name="scripts"/>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\shader0.shader</shader>
   </shaders>
@@ -129,9 +121,6 @@
     <object>objects\lamp</object>
     <object>objects\ball</object>
     <object>objects\topWater</object>
-    <object>objects\Controller</object>
-    <object>objects\Guy</object>
-    <object>objects\Player0</object>
     <object>objects\object0</object>
   </objects>
   <timelines name="timelines">

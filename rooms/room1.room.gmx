@@ -186,7 +186,8 @@
     <instance objName="noPass" x="-64" y="7360" name="inst_FDF13FF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="noPass" x="-64" y="8000" name="inst_CAFD365C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Guy" x="1024" y="7616" name="inst_C2BC194E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Controller" x="704" y="7424" name="inst_93C19D6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="704" y="7424" name="inst_93C19D6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Controller" x="1152" y="7552" name="inst_D8D3D8C6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="l0" x="512" y="7104" w="384" h="192" xo="0" yo="768" id="10000078" name="inst_64A29A84" depth="1000" locked="0" colour="4294967295" scaleX="4" scaleY="4"/>
