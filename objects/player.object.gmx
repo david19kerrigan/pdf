@@ -206,7 +206,7 @@ if(jumpHeld)
     
     else if(ySpeed &lt; 0)
     {
-        if(ySpeed &lt; 10) ySpeed += grav/3;
+        if(ySpeed &lt; 10) ySpeed += grav/2.5;
     }
     else ySpeed+=grav;
 }
@@ -371,7 +371,7 @@ if distance_to_point(w.x,w.y)&lt;512 {
 }
 
 if distance_to_point(w.x,w.y)&gt;512{
-    audio_stop_all()
+    audio_stop_sound(snd_Sea);
     played = false
 }
 
@@ -402,6 +402,32 @@ if distance_to_point(w.x,w.y)&gt;512{
 }
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+if(room==0 &amp;&amp; worldMusic==false){
+    audio_play_sound(sound5, 1, true);
+    worldMusic = true;
+    show_debug_message("done");
+}
 </string>
           </argument>
         </arguments>
@@ -438,7 +464,7 @@ played = false
 s = false
 inWater = false;
 inAir = true;
-
+worldMusic = false;
 //window_set_fullscreen(true);
 
 </string>
