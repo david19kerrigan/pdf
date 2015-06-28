@@ -157,7 +157,7 @@
     <instance objName="worm" x="1156" y="7660" name="inst_8C431F49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="light" x="1112" y="7634" name="inst_82D53A28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object11" x="1388" y="7654" name="inst_ABE09886" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="object10" x="1024" y="7648" name="inst_556967CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object10" x="1292" y="7648" name="inst_556967CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="fire" x="1288" y="7664" name="inst_F7E2A81B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object16" x="608" y="7662" name="inst_4B6B335B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="topWater" x="0" y="7616" name="inst_438553C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -191,6 +191,8 @@
     <instance objName="doorway0" x="1616" y="7596" name="inst_D47C237F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="doorway0" x="1616" y="7616" name="inst_FB423AB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="doorway0" x="1644" y="7616" name="inst_49F5429F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="object25" x="836" y="7572" name="inst_DA7CD5AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="v0dialogue" x="1076" y="7588" name="inst_E8B06A06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="l0" x="512" y="7104" w="384" h="192" xo="0" yo="768" id="10000078" name="inst_64A29A84" depth="1000" locked="0" colour="4294967295" scaleX="4" scaleY="4"/>

@@ -34,6 +34,9 @@
           <sprite>sprites\prompt</sprite>
         </sprites>
       </sprites>
+      <sprites name="v00">
+        <sprite>sprites\v00</sprite>
+      </sprites>
     </sprites>
     <sprites name="water">
       <sprite>sprites\sprite24</sprite>
@@ -123,17 +126,24 @@
       <object>objects\fire</object>
       <object>objects\noPass</object>
     </objects>
-    <objects name="v0">
-      <object>objects\object10</object>
-    </objects>
     <object>objects\lamp</object>
     <object>objects\ball</object>
     <object>objects\topWater</object>
     <object>objects\object0</object>
+    <objects name="dialogue">
+      <objects name="v0">
+        <object>objects\object10</object>
+        <object>objects\v0dialogue</object>
+      </objects>
+      <objects name="v00">
+        <object>objects\object25</object>
+      </objects>
+    </objects>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeline0</timeline>
     <timeline>timelines\timeline1</timeline>
+    <timeline>timelines\timeline2</timeline>
   </timelines>
   <rooms name="rooms">
     <room>rooms\room0</room>

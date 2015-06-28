@@ -39,6 +39,17 @@ prev = xspeed
 alarm1 = -1
 
 
+dialogue = ds_list_create()
+
+in = 0
+
+xspeed = .4
+
+
+
+
+
+
 
 
 
@@ -180,6 +191,53 @@ if(xspeed &lt; 0){
 x+=xspeed
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(in&gt;1){in=0}
+nearest = instance_nearest(x, y, player);
+if (distance_to_object(nearest) &lt; 64) {
+    
+    draw_sprite(prompt,in,x,y+64)
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>v0dialogue.x = x
 </string>
           </argument>
         </arguments>
