@@ -88,7 +88,25 @@ worldMusic = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!(place_meeting(x,y,water) or place_meeting(x,y,object47))){
+            <string>if(place_meeting(x,y,water) or place_meeting(x,y,object47)){
+    grav = .4;
+    jSpeed = 6;
+    if(place_meeting(x,y,topWater) and s == false){
+        war = instance_nearest(x,y,water)
+        instance_create(war.x+32,war.y,object0)
+        s = true;
+    }
+    if(place_meeting(x,y,object47) and !place_meeting(x,y,topWater)){
+        s = false;
+    }
+    if(place_meeting(x,y,topWater) and !place_meeting(x,y,water)){
+        s = false
+    }
+    inWater = true
+    inAir = false
+    
+}
+if(!(place_meeting(x,y,water) or place_meeting(x,y,object47))){
     grav = 1.6;
     jSpeed = 14
     
@@ -173,7 +191,7 @@ if(wJumpingRight == true and alarm1 = -1 and ySpeed &gt; 0)
     if(keyLeft and alarm1 == -1) 
     {
         
-        alarm1 = room_speed*.5-.5;
+        alarm1 = round(room_speed*.1)
     }
     ySpeed = .3;
 }
@@ -186,7 +204,7 @@ if(wJumpingLeft == true and alarm2 = -1 and ySpeed &gt; 0)
     {
         alarm3=-1;
         show_debug_message("a");
-        alarm2 = room_speed*.3-.5;
+        alarm2 = round(room_speed*.1)
         
     }
     ySpeed = .3;
