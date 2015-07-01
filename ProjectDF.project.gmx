@@ -37,6 +37,10 @@
       <sprites name="v00">
         <sprite>sprites\v00</sprite>
       </sprites>
+      <sprites name="v1">
+        <sprite>sprites\sprite47</sprite>
+        <sprite>sprites\sprite48</sprite>
+      </sprites>
     </sprites>
     <sprites name="water">
       <sprite>sprites\sprite24</sprite>
@@ -75,18 +79,23 @@
     <sprite>sprites\sprite0</sprite>
     <sprites name="blocks">
       <sprite>sprites\spoint</sprite>
+      <sprite>sprites\dock</sprite>
+      <sprite>sprites\trunk</sprite>
+      <sprite>sprites\strip</sprite>
     </sprites>
     <sprite>sprites\sDialog</sprite>
     <sprite>sprites\sGuy</sprite>
     <sprite>sprites\sPlayer</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\background1</background>
-    <background>background\background3</background>
-    <background>background\background2</background>
-    <background>background\l0</background>
-    <background>background\l0_new</background>
-    <background>background\h0</background>
+    <backgrounds name="l0">
+      <background>background\l0</background>
+      <background>background\background1</background>
+      <background>background\background3</background>
+      <background>background\l0_new</background>
+      <background>background\background6</background>
+      <background>background\h0</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <shaders name="shaders">
@@ -119,6 +128,9 @@
         <object>objects\doorway1</object>
         <object>objects\doorway0</object>
       </objects>
+      <object>objects\docks</object>
+      <object>objects\trunks</object>
+      <object>objects\strips</object>
     </objects>
     <objects name="misc">
       <object>objects\platform0</object>
@@ -137,6 +149,10 @@
       </objects>
       <objects name="v00">
         <object>objects\object25</object>
+      </objects>
+      <objects name="v1">
+        <object>objects\boat</object>
+        <object>objects\v1</object>
       </objects>
     </objects>
   </objects>

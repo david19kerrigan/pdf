@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -88,25 +88,7 @@ worldMusic = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_meeting(x,y,water) or place_meeting(x,y,object47)){
-    grav = .4;
-    jSpeed = 6;
-    if(place_meeting(x,y,topWater) and s == false){
-        war = instance_nearest(x,y,water)
-        instance_create(war.x+32,war.y,object0)
-        s = true;
-    }
-    if(place_meeting(x,y,object47) and !place_meeting(x,y,topWater)){
-        s = false;
-    }
-    if(place_meeting(x,y,topWater) and !place_meeting(x,y,water)){
-        s = false
-    }
-    inWater = true
-    inAir = false
-    
-}
-if(!(place_meeting(x,y,water) or place_meeting(x,y,object47))){
+            <string>if(!(place_meeting(x,y,water) or place_meeting(x,y,object47))){
     grav = 1.6;
     jSpeed = 14
     
@@ -394,7 +376,6 @@ if(ySpeed &gt; 0 and !jumpHeld and grav == 1.6) ySpeed +=grav
 if(grav == .4 and ySpeed &gt; 5){
     ySpeed = 5
 }
-
 </string>
           </argument>
         </arguments>
@@ -513,10 +494,17 @@ if(room==0 &amp;&amp; worldMusic==false){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_meeting(x,y,doorway0)){
+            <string>keyDown = keyboard_check_pressed(vk_down);
+if(place_meeting(x,y,doorway0) and keyDown){
     room_goto(1)
     x=672
     y=3392
+}
+
+if(place_meeting(x,y,doorway1) and keyDown){
+    room_goto(0)
+    x=1632  
+    y=7616
 }
 </string>
           </argument>
